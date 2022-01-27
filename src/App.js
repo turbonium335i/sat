@@ -54,9 +54,11 @@ function App() {
   
  
     posts = posts.filter((val) =>{
+
+      var qterm = searchTerm.trim().toLowerCase()
  
 
-      if (val.testName.toLowerCase().includes(searchTerm.trim().toLowerCase()) || val.passage1.toLowerCase().includes(searchTerm) || val.blurb.toLowerCase().includes(searchTerm)     ){
+      if (val.testName.toLowerCase().includes(qterm) || val.passage1.toLowerCase().includes(qterm) || val.blurb.toLowerCase().includes(qterm)     ){
           return val
         }
 
