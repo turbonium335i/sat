@@ -35,7 +35,7 @@ const Posts = ({posts, loading, alertPost}) => {
                 {posts.map((post, x) => (
                         <li key={post.id} className='list-group-item text-light border border-secondary py-1' 
                         style={{backgroundColor:"#080808", cursor:"pointer"}} >
-                            <span className='text-warning'>{post.testName}</span> &#8594; {post.passage4}  
+                            <span className='text-warning'>{post.testName}</span> &#8594; {post.passage1}  
                             
                             <hr className='mb-1'/>
                            
