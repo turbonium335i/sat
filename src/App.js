@@ -54,8 +54,7 @@ function App() {
   
  
     posts = posts.filter((val) =>{
-
-      console.log(val)
+ 
 
       if (val.testName.toLowerCase().includes(searchTerm.trim().toLowerCase()) || val.passage1.toLowerCase().includes(searchTerm) || val.blurb.toLowerCase().includes(searchTerm)     ){
           return val
@@ -78,7 +77,7 @@ function App() {
 
   const fetchTasks = async () => {
     setloading(true);
-    const res = await fetch('http://pertinacity1.pythonanywhere.com/satapi')
+    const res = await fetch('https://pertinacity1.pythonanywhere.com/satapi')
     const data = await res.json()
 
     return data.reverse()
